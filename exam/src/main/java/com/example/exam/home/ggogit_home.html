@@ -8,101 +8,135 @@
       name="viewport"
       content="wclassth=device-wclassth, initial-scale=1.0"
     />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>나의 트리 목록</h1>
-      <form method="post">
-        <a href="">
-          <img src="" alt="" />
+    <header class="body-header">
+      <h1 class="header-title">나의 트리 목록</h1>
+      <section class="header-search-section">
+        <h1 class="header-search-section-title">헤더 검색창</h1>
+          <a href="" class="header-search-anker">
+            <div class="header-search-section-div">
+            <span class="header-search-anker-span">
+              <p>나의 트리 검색</p>
+            </span>
+            <span class="header-search-anker-span2">
+              <img src="/exam/src/main/resources/img/lens.png" alt="lens.png" />
+            </span>
+          </div>
+          </div> 
         </a>
-      </form>
+      </section>
     </header>
     <main>
       <section>
-        <h1>나의 최근 트리</h1>
-        <section>
-          <h1>트리 목록</h1>
-          <div>
-            <a href="tree-left" class="tree-cover"><img src="" alt="" /></a
-            ><a href="tree-main" class="tree-cover"><img src="" alt="" /></a
-            ><a href="tree-right" class="tree-cover"><img src="" alt="" /></a>
+        <h1 class="main-section-title">나의 최근 트리</h1>
+        <section class="main-section-2section">
+          <h1 class="main-section-2section-treecover-title">트리 목록</h1>
+          <div class="main-section-2section-empty"></div>
+          <div class="main-section-2section-treecover-div">
+            <a href="tree-left" class="main-section-2section-treecover-left"
+              ><img
+                src="/exam/src/main/resources/img/book-cover-left.png"
+                alt="" /></a
+            ><a href="tree-main" class="main-section-2section-treecover-main"
+              ><img
+                src="/exam/src/main/resources/img/book-cover-main.png"
+                alt="" /></a
+            ><a href="tree-right" class="main-section-2section-treecover-right"
+              ><img
+                src="/exam/src/main/resources/img/book-cover-right.png"
+                alt=""
+            /></a>
           </div>
-          <div>
-            <p class="seed">시/에세이</p>
-            <p class="tree-title">나의 첫번째 트리</p>
-            <p>
-              <span class="author">김민철</span> ·
-              <span class="publisher">위즈덤하우스</span>
+          <div class="main-section-2section-treecover-div2">
+            <p class="main-section-2section-catecory">시/에세이</p>
+            <p class="main-section-2section-treetitle">나의 첫번째 트리</p>
+            <p class="main-section-2section-author-publisher">
+              <span class="main-section-2section-author">김민철</span> ·
+              <span class="main-section-2section-publisher">위즈덤하우스</span>
             </p>
-            <p class="publishDate">2024.07.15</p>
+            <p class="main-section-2section-publishDate">2024.07.15</p>
           </div>
         </section>
-        <section>
-          <article>
+        <section class="main-section2">
+          <article class="tree-dscription-article">
             <h1>트리 설명</h1>
-            <p class="treeDiscription">
+            <p>
               코딩 테스트 합격자 되기 자바스크립트 편의 영감 기록을 남기는
               이유는 다음과 같습니다. 영감 기록을 작성하면 책에서 배운 내용을
               정리하고 이해도를 높일 수 있습니다.
             </p>
           </article>
-          <section>
-            <div>
-              <span><h1>독서 진행률</h1></span><span class="readRate">80%</span>
-              <div class="progress-bar"></div>
+          <section class="main-section2-section">
+            <div class="main-section2-section-div">
+              <span><h1>독서 진행률</h1></span
+              ><span class="main-section2-section-readRate">80%</span>
+            </div>
+            <div class="main-section2-section-div2">
+              <progress
+                class="main-section2-section-div2-progressbar"
+                value="320"
+                min="0"
+                max="400"
+              ></progress>
               <!-- 하단 바 css 블로그 https://guiyomi.tistory.com/66 -->
-              <div>
-                <span class="readPage">320</span> /
-                <span class="totalPage">400</span>
+              <div class="main-section2-section-div2-progresspage">
+                <span>320</span> /
+                <span>400</span>
               </div>
-              <div class="leaf">나뭇잎 +999</div>
-              <div class="like">좋아요 +999</div>
-              <div class="view">조회수 +999</div>
+              <div class="main-section2-section-leaf">나뭇잎 +999</div>
+              <div class="main-section2-section-like">좋아요 +999</div>
+              <div class="main-section2-section-view">조회수 +999</div>
             </div>
           </section>
         </section>
       </section>
       <section>
-        <header>
+        <header class="main-2section-header">
+          <div class="main-2section-headerdiv">
           <h1>트리 목록</h1>
-          <span class="treeCount">14그루</span>
-          <div>
-            <span class="filter-icon">필터아이콘</span>
-            <span class="book-filter">도서</span>
-            <span class="inspiration-filter">영감</span>
-            <span class="vclasseo-filter">유튜브</span>
-            <span class="finishBook-filter">완독</span>
+          <div class="main-2section-headerdiv2">
+            <span >14</span><span >그루</span>
+          </div>
           </div>
         </header>
-        <nav>
-          <ul>
-            <li>
-              <a href="" class="tree-detail">
-                <div class="book-cover"><img src="" alt="" /></div>
-                <div>
-                  <div>
-                    <span class="seed">도서</span
-                    ><span class="seed-category">정치 비평</span>
+        <nav class="main-2section-nav">
+          <div class="main-2section-nav-div">
+              <a href="" class="main-2section-nav-div-filtericon"><img src="/exam/src/main/resources/img/filter.png"></a>
+              <a href="" class="book-filter">도서</a>
+              <a href="" class="inspiration-filter">영감</a>
+              <a href="" class="vclasseo-filter">유튜브</a>
+              <a href="" class="finishBook-filter">완독</a>
+          </div>
+          <ul class="main-2section-nav-booklist">
+            <li class="main-2section-nav-booklist-book">
+              
+                <a href="" class="tree-detail">
+                  <div class="book-cover"><img src="/exam/src/main/resources/img/book-list1.png" alt="" /></div>
+                  <div class="book-detail">
+                    <div>
+                      <span class="seed">도서</span
+                      ><span class="seed-category">정치 비평</span>
+                    </div>
+                    <div class="tree-title"><h4>운명이란 무엇인가?</h4></div>
+                    <div class="book-title">
+                      그의 운명에 대한 아주 개인적인 생각
+                    </div>
+                    <div>
+                      <span class="publish-date">2024</span
+                      ><span class="author">유시민</span
+                      ><span class="publisher">생각의길</span>
+                    </div>
+                    <div class="create-date">2024-07-15</div>
                   </div>
-                  <div class="tree-title"><h4>운명이란 무엇인가?</h4></div>
-                  <div class="book-title">
-                    그의 운명에 대한 아주 개인적인 생각
-                  </div>
-                  <div>
-                    <span class="publish-date">2024</span
-                    ><span class="author">유시민</span
-                    ><span class="publisher">생각의길</span>
-                  </div>
-                  <div class="create-date">2024-07-15</div>
-                </div>
-              </a>
+                </a>
             </li>
-            <li>
+            <li  class="main-2section-nav-booklist-book">
               <a href="" class="tree-detail">
-                <div class="book-cover"><img src="" alt="" /></div>
-                <div>
+                <div class="book-cover"><img src="/exam/src/main/resources/img/book-list2.png" alt="" /></div>
+                <div class="book-detail">
                   <div>
                     <span class="seed">영감</span
                     ><span class="seed-category"></span>
@@ -118,10 +152,10 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li  class="main-2section-nav-booklist-book">
               <a href="" class="tree-detail">
-                <div class="book-cover"><img src="" alt="" /></div>
-                <div>
+                <div class="book-cover"><img src="/exam/src/main/resources/img/book-list3.png" alt="" /></div>
+                <div class="book-detail">
                   <div>
                     <span class="seed">도서</span
                     ><span class="seed-category">정치 비평</span>
@@ -137,10 +171,10 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li  class="main-2section-nav-booklist-book">
               <a href="" class="tree-detail">
-                <div class="book-cover"><img src="" alt="" /></div>
-                <div>
+                <div class="book-cover"><img src="/exam/src/main/resources/img/book-list2.png" alt="" /></div>
+                <div class="book-detail">
                   <div>
                     <span class="seed">영감</span
                     ><span class="seed-category"></span>
